@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>问卷</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+	/*	var q1=document.forms["myf"]["q01"].value;
+		var q2=document.forms["myf"]["q02"].value+q1;
+		var q3=document.forms["myf"]["q03"].value+q2;
+		var q4=document.forms["myf"]["q04"].value+q3;
+		var q5=document.forms["myf"]["q05"].value+q4;
+		var q6=document.forms["myf"]["q06"].value+q5;
+		var q7=document.forms["myf"]["q07"].value+q6;
+		var q8=document.forms["myf"]["q08"].value+q7;
+		var q9=document.forms["myf"]["q09"].value+q8;
+		var q10=document.forms["myf"]["q10"].value+q9;
+		var q11=document.forms["myf"]["q11"].value+q10;
+		var q12=document.forms["myf"]["q12"].value+q11;
+		var q13=document.forms["myf"]["q13"].value+q12;
+		var q14=document.forms["myf"]["q14"].value+q13;
+		var q15=document.forms["myf"]["q15"].value+q14;
+//		document.getElementById("btn2").addEventListener("click", displaybtn);
+		function displaybtn(){
+			alert("you get"+q1+"point");
+		}*/
+	
+			function func1(){
+				x=document.getElementById("ly1");
+				x.innerHTML="";
+			}
+			function func2(){
+				x=document.getElementById("ly2");
+				x.innerHTML="";
+			}
+			function func3(){
+				x=document.getElementById("ly3");
+				x.innerHTML="";
+			}
+			function func4(){
+				x=document.getElementById("ly4");
+				x.innerHTML="";
+			}
+			function func5(){
+				x=document.getElementById("ly5");
+				x.innerHTML="";
+			}
+			function func6(){
+				x=document.getElementById("ly6");
+				x.innerHTML="";
+			}
+			function func7(){
+				x=document.getElementById("ly7");
+				x.innerHTML="";
+			}
+			function func8(){
+				x=document.getElementById("ly8");
+				x.innerHTML="";
+			}
+			function func9(){
+				x=document.getElementById("ly9");
+				x.innerHTML="";
+			}
+			function func10(){
+				x=document.getElementById("ly10");
+				x.innerHTML="";
+			}
+			function func11(){
+				x=document.getElementById("ly11");
+				x.innerHTML="";
+			}
+			function func12(){
+				x=document.getElementById("ly12");
+				x.innerHTML="";
+			}
+			function func13(){
+				x=document.getElementById("ly13");
+				x.innerHTML="";
+			}
+			function func14(){
+				x=document.getElementById("ly14");
+				x.innerHTML="";
+			}
+			function func15(){
+				x=document.getElementById("ly15");
+				x.innerHTML="";
+			}
+			
+			
+		
+   		
+    </script>
+	<style type="text/css">
+		#btn2{
+			 background-color: lightblue;
+	border: none;
+	color: black;
+	padding: 15px 32px;
+	text-align: center;
+	
+	display: inline-block;
+	font-size: 16px;
+	margin: auto;
+	cursor: pointer;
+	border-radius: 12px;
+	
+	
+		}
+		.f1{
+			background-color: lightblue;
+		}
+		
+		
+		
+		#sidemenu{
+                display: none;
+            }
+
+            #sidemenu:checked  + aside {
+                /*为被选中的sidemenu后的aside设置属性（紧邻）*/
+                right: 0;
+                /*点击按钮即选中checked后,侧边栏位置变为贴着左边,配合ease-out使用,有渐变滑出的效果*/
+            }
+
+            #sidemenu:checked  ~ #wrap {
+                /*为被选中的sidemenu后的wrap设置属性（非紧邻）*/
+                padding-right: 300px;
+            }
+
+            aside {
+                /*侧边栏,初始位置为-200px，即隐藏效果*/
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                right: -250px;
+                width: 250px;
+                background: black;
+                transition: 0.2s ease-out;
+                /*动画效果的执行方式是ease-out，即侧边栏滑动效果为渐变式，而不是生硬的突然变化*/
+            }
+
+            h2 {
+                color: white;
+                text-align: center;
+                font-size: 2em;
+            }
+
+            /*控制侧边栏进出的按钮（外部包裹）*/
+            #wrap {
+                margin-left: 20px;
+                padding: 10px;
+                transition: 0.2s ease-out;
+            }
+
+            /*控制侧边栏进出的按钮（内部文字样式）*/
+            .ce1 {
+                /*控制侧边栏进出的按钮*/
+                background: black;
+                border-radius: 70px;
+                color: orange;
+                cursor: pointer;
+                display: block;
+                font-family: Courier New;
+                font-size: 2em;
+                width: 1.5em;
+                height: 1.5em;
+                line-height: 1.5em;
+                text-align: center;
+                display: inline-block;
+				right: 30px;
+				
+            }
+
+            label:hover {
+                background: #000;
+            }
+
+            #sideul li {
+                list-style: none;
+                color: white;
+                width: 100%;
+                height: 1em;
+                font-size: 1.5em;
+                text-align: left;
+            }
+
+            a {
+                text-decoration: none;
+				text-align: left;
+            }
+
+            #sideul li:hover {
+                color: orange;
+            }
+			
+			.ly{
+				color: red;
+			}
+			.pp1{
+				color: wheat;
+			}
+			em{
+				color: red;
+			}
+			.dd1{
+				position:fixed
+			}
+
+	</style>
+</head>
+<body>
+		<div class="dd1">
+			
+		
+		<input type='checkbox' id='sidemenu'>
+	        <aside class="dd1">
+	            <h2>选题</h2>
+	            <br />
+	            <ul id="sideul">
+					<p class="pp1">第01题<em id="ly1">未答</em>第02题<em id="ly2">未答</em></p>
+					<p class="pp1">第03题<em id="ly3">未答</em>第04题<em id="ly4">未答</em></p>
+					<p class="pp1">第05题<em id="ly5">未答</em>第06题<em id="ly6">未答</em></p>
+					<p class="pp1">第07题<em id="ly7">未答</em>第08题<em id="ly8">未答</em></p>
+					<p class="pp1">第09题<em id="ly9">未答</em>第10题<em id="ly10">未答</em></p>
+					<p class="pp1">第11题<em id="ly11">未答</em>第12题<em id="ly12">未答</em></p>
+					<p class="pp1">第13题<em id="ly13">未答</em>第14题<em id="ly14">未答</em></p>
+					<p class="pp1">第15题<em id="ly15">未答</em>
+<!--	                <a>
+	                    <li></li>
+	                </a>
+	                <a>
+	                    <li>第1题</li><p class="ly" id="ly1">未答</p>
+	                </a>
+					<a>
+					    <li>第2题</li><p class="ly" id="ly2">未答</p>
+					</a>
+					<a>
+					    <li>第3题</li><p class="ly" id="ly3">未答</p>
+					</a>
+					<a>
+					    <li>第4题</li><p class="ly" id="ly4">未答</p>
+					</a>
+					<a>
+					    <li>第5题</li><p class="ly" id="ly5">未答</p>
+					</a>
+					<a>
+					    <li>第6题</li><p class="ly" id="ly6">未答</p>
+					</a>
+					<a>
+					    <li>第7题</li><p class="ly" id="ly7">未答</p>
+					</a>
+					<a>
+					    <li>第8题</li><p class="ly" id="ly8">未答</p>
+					</a>
+					<a>
+					    <li>第9题</li><p class="ly" id="ly9">未答</p>
+					</a>
+					<a>
+					    <li>第10题</li><p class="ly" id="ly10">未答</p>
+					</a>
+					<a>
+					    <li>第11题</li><p class="ly" id="ly11">未答</p>
+					</a>
+					<a>
+					    <li>第12题</li><p class="ly" id="ly12">未答</p>
+					</a>
+					<a>
+					    <li>第13题</li><p class="ly" id="ly13">未答</p>
+					</a>
+					<a>
+					    <li>第14题</li><p class="ly" id="ly14">未答</p>
+					</a>
+					<a>
+					    <li>第15题</li><p class="ly" id="ly15">未答</p>
+					</a>
+	-->			
+	            </ul>
+	        </aside>
+	        <div id='wrap' class="dd1">
+	            <label class="ce1" id='sideMenuControl' for='sidemenu'>≡</label>
+	            <!--for 属性规定 label 与哪个表单元素绑定，即将这个控制侧边栏进出的按钮与checkbox绑定-->
+	        </div>
+	
+	</div>
+	
+	
+	
+	<div>
+		<form action="post.php" method="post">
+
+		<form name="myf">
+			<p>姓名</p>
+			<input type="text" name="fname" /><br />
+			<p>年龄</p>
+			<input type="number" name="age" /><br />
+			<p>性别</p>
+			<select name="gender">
+				<option value="male">男</option>
+				<option value="female">女</option>
+			</select>
+		<fieldset class="f1">
+  			<p>一、人际关系</p>
+  			<input type="radio" value="1" name="q01" id="q011" onclick="func1()"/>
+  			<label for="q011">A.与年龄相当：与年龄相符的害羞、自卫及表示不同意或家人诉说的或观察到的一些轻微的害羞、烦躁、困扰，但与同龄孩子相比程度并不严重。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q01" id="q012" onclick="func1()"/>
+  			<label for="q012">B.轻度异常：缺乏一些眼光接触，不愿意、回避、过分害羞，对检查者反应有轻度缺陷，有时过度依赖父母。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q01" id="q013" onclick="func1()"/>
+  			<label for="q013">C.中度异常：有时儿童表现出孤独冷漠，引起儿童注意要花费较长时间和较大的努力，极少主动接触他人，常回避人，要使劲打扰他才能得到反应</label>
+  			<br/>
+  			<input type="radio" value="4" name="q01" id="q014" onclick="func1()"/>
+  			<label for="q014">D.严重异常：强烈地回避，总是显得孤独冷漠，毫不理会成人所作所为，儿童对检查者很少反应，只有检查者强烈地干扰，才能产生反应</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>二、模仿（词和动作）</p>
+  			<input type="radio"   value="1" name="q02" id="q021" onclick="func2()"/>
+  			<label for="q021">A.与年龄相当：与年龄相符的模仿</label>
+  			<br/>
+  			<input type="radio" value="2" name="q02" id="q022" onclick="func2()"/>
+  			<label for="q022">B.轻度异常：大多数时间内能模仿简单的行为，偶尔在督促下或延迟一会能模仿</label>
+  			<br/>
+  			<input type="radio" value="3" name="q02" id="q023" onclick="func2()"/>
+  			<label for="q023">C.中度异常：部分时间能模仿，但常在检查者极大的要求下才模仿</label>
+  			<br/>
+  			<input type="radio" value="4" name="q02" id="q024" onclick="func2()"/>
+  			<label for="q024">D.严重异常：很少用语言或运动模仿别人</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>三、情感反应</p>
+  			<input type="radio" value="1" name="q03" id="q031" onclick="func3()"/>
+  			<label for="q031">A.与年龄相当：与年龄、情境相适应的情感反应（愉快、不愉快）和兴趣，通过面部表情姿势的变化来表达</label>
+  			<br/>
+  			<input type="radio" value="2" name="q03" id="q032" onclick="func3()"/>
+  			<label for="q032">B.轻度异常：偶尔表现出某种不恰当的情绪类型和程度，有时反应与客观环境或事物毫无联系</label>
+  			<br/>
+  			<input type="radio" value="3" name="q03" id="q033" onclick="func3()"/>
+  			<label for="q033">C.中度异常：不适当的情感的示意，反应相当受限或过分，或往往与刺激无关</label>
+  			<br/>
+  			<input type="radio" value="4" name="q03" id="q034" onclick="func3()"/>
+  			<label for="q034">D.严重异常：对环境极少有情绪反应，或反应极不恰当。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>四、躯体运用能力</p>
+  			<input type="radio"   value="1" name="q04" id="q041" onclick="func4()"/>
+  			<label for="q041">A.与年龄相当：与年龄相适应的利用和意识</label>
+  			<br/>
+  			<input type="radio" value="2" name="q04" id="q042" onclick="func4()"/>
+  			<label for="q042">B.轻度异常：可见一些轻微异常，诸如笨拙、重复动作、协调性差等情况</label>
+  			<br/>
+  			<input type="radio" value="3" name="q04" id="q043" onclick="func4()"/>
+  			<label for="q043">C.中度异常：有中度特殊的手指或身体姿势功能失调的征象，摇动旋转，手指摆动，脚尖行走</label>
+  			<br/>
+  			<input type="radio" value="4" name="q04" id="q044" onclick="func4()"/>
+  			<label for="q044">D.严重异常：出现于上述的一些异常运动，但强度更高、频率更多，即使受到别人制止，或儿童在从事另外的活动时均持续出现</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>五、与非生命物体的关系</p>
+  			<input type="radio"   value="1" name="q05" id="q051" onclick="func5()"/>
+  			<label for="q051">A.与年龄相当：适合年龄的兴趣运用和探索</label>
+  			<br/>
+  			<input type="radio" value="2" name="q05" id="q052" onclick="func5()"/>
+  			<label for="q052">B.轻度异常：轻度的对东西缺乏兴趣或不适当地使用物体，象婴儿一样咬东西，猛敲东西，或者迷恋于物体发出的吱吱叫声或不停地开灯、关灯</label>
+  			<br/>
+  			<input type="radio" value="3" name="q05" id="q053" onclick="func5()"/>
+  			<label for="q053">C.中度异常：对多数物体缺乏兴趣或表现有些特别，如重复转动某件物体，反复用手指尖捏起东西，旋转轮子或对某部分着迷，这些行为可部分地或暂时地纠正。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q05" id="q054" onclick="func5()"/>
+  			<label for="q054">D.严重异常：严重的对物体的不适当的兴趣、使用和探究，如上边发生的情况频繁的发生，很难转移其注意力。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>六、对环境变化的适应</p>
+  			<input type="radio"   value="1" name="q06" id="q061" onclick="func6()"/>
+  			<label for="q061">A.与年龄相当：对环境改变产生与年龄相适应的反应。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q06" id="q062" onclick="func6()"/>
+  			<label for="q062">B.轻度异常：对环境改变产生某些改变，倾向维持某一物体活动或坚持相同的反应形式，但很快能改变过来。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q06" id="q063" onclick="func6()"/>
+  			<label for="q063">C.中度异常：儿童拒绝改变日常程序，对环境改变出现烦躁、沮丧的征象，当干扰他时很难被吸引过来。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q06" id="q064" onclick="func6()"/>
+  			<label for="q064">D.严重异常：对改变产生严重的反应，假如坚持把环境的变化强加给他，该儿童可能生气或极不合作，以暴怒作为反应。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>七、视觉反应</p>
+  			<input type="radio"   value="1" name="q07" id="q071" onclick="func7()"/>
+  			<label for="q071">A.与年龄相当：适合年龄的视觉反应，可与其他感觉系统反应整合</label>
+  			<br/>
+  			<input type="radio" value="2" name="q07" id="q072" onclick="func7()"/>
+  			<label for="q072">B.轻度异常：有时必须提醒儿童去注意物体，有时全神贯注于“镜像”，有时回避眼光接触，有时凝视空间，有时着迷于灯光</label>
+  			<br/>
+  			<input type="radio" value="3" name="q07" id="q073" onclick="func7()"/>
+  			<label for="q073">C.中度异常：经常要提醒正在干什么，喜欢观看光亮的物体即使强迫他也只有很少的眼光接触，盯着看人或凝视空间</label>
+  			<br/>
+  			<input type="radio" value="4" name="q07" id="q074" onclick="func7()"/>
+  			<label for="q074">D.严重异常：对物体和人存在广泛严重的视觉回避，也可能表现出上面描述的特异性视觉模式，着迷于使用“余光”。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>八、听觉反应</p>
+  			<input type="radio"   value="1" name="q08" id="q081" onclick="func8()"/>
+  			<label for="q081">A.与年龄相当：适合年龄的听觉反应</label>
+  			<br/>
+  			<input type="radio" value="2" name="q08" id="q082" onclick="func8()"/>
+  			<label for="q082">B.轻度异常：对听觉刺激或某些特殊声音缺乏一些反应，反应可能延迟，有时必须重复声音刺激，有时对大的声音敏感或对此声音分心，有时会被无关的声音搞得心烦意乱。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q08" id="q083" onclick="func8()"/>
+  			<label for="q083">C.中度异常：对声音的反应常出现变化，往往必须重复数次刺激才产生反应，或对某些声音敏感（如很容易受惊、捂上耳朵等）</label>
+  			<br/>
+  			<input type="radio" value="4" name="q08" id="q084" onclick="func8()"/>
+  			<label for="q084">D.严重异常：对声音全面回避，对声音类型不加注意或极度敏感</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>九、近处感觉反应</p>
+  			<input type="radio"   value="1" name="q09" id="q091" onclick="func9()"/>
+  			<label for="q091">A.与年龄相当：对疼痛产生适当强度的反应，正常触觉和嗅觉。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q09" id="q092" onclick="func9()"/>
+  			<label for="q092">B.轻度异常：儿童可能不停地将一些东西塞入口重，也许一次又一次地闻、尝不能吃的东西，对捏或其他轻微痛刺激出现忽视或过度反应。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q09" id="q093" onclick="func9()"/>
+  			<label for="q093">C.中度异常：儿童可能比较迷恋触、闻、舔物品或人。对痛觉也表现出一定程度的异常反应，过度敏感或迟钝。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q09" id="q094" onclick="func9()"/>
+  			<label for="q094">D.严重异常：儿童迷恋嗅、舔物品，而很少用正常的方式去感觉、探索物品，对痛觉可能过分敏感或迟钝。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十、焦虑反应</p>
+  			<input type="radio"   value="1" name="q10" id="q101" onclick="func10()"/>
+  			<label for="q101">A.与年龄相当：对情境产生与年龄相适应的反应，并且反应无延长。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q10" id="q102" onclick="func10()"/>
+  			<label for="q102">B.轻度异常：轻度焦虑反应。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q10" id="q103" onclick="func10()"/>
+  			<label for="q103">C.中度异常：中度焦虑反应。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q10" id="q104" onclick="func10()"/>
+  			<label for="q104">D.严重异常：严重的焦虑反应，儿童在会见的一段时间内可能不能坐下，或很害怕，或退缩，且安抚他们是极端困难的，有时又会不辨危险</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十一、语言交流</p>
+  			<input type="radio"   value="1" name="q11" id="q111" onclick="func11()"/>
+  			<label for="q111">A.与年龄相当：适合年龄的语言</label>
+  			<br/>
+  			<input type="radio" value="2" name="q11" id="q112" onclick="func11()"/>
+  			<label for="q112">B.轻度异常：语言迟钝，多数语言有意义，但有一点模仿语言或代词错用。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q11" id="q113" onclick="func11()"/>
+  			<label for="q113">C.中度异常：缺乏语言，或有意义的语言与不适当的语言相混淆（模仿言语或莫名其妙的话）</label>
+  			<br/>
+  			<input type="radio" value="4" name="q11" id="q114" onclick="func11()"/>
+  			<label for="q114">D.严重异常：不能应用有意义的语言，而且儿童可能出现幼稚性尖叫或怪异的、动物样声音、或者是类似言语的噪音。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十二、非语言交流</p>
+  			<input type="radio"   value="1" name="q12" id="q121" onclick="func12()"/>
+  			<label for="q121">A.与年龄相当：与年龄相符的非语言交流</label>
+  			<br/>
+  			<input type="radio" value="2" name="q12" id="q122" onclick="func12()"/>
+  			<label for="q122">B.轻度异常：非语言交流迟钝，交往仅为简单的或含糊的反应，如指出或去取他想要的东西</label>
+  			<br/>
+  			<input type="radio" value="3" name="q12" id="q123" onclick="func12()"/>
+  			<label for="q123">C.中度异常：缺乏非语言交往，不会利用非语言交往，或不会对非语言交往作出反应，也许拉着成人的手走向自己所想要的东西，但不能用姿势来表明自己的愿望，或不能用手指向要的东西</label>
+  			<br/>
+  			<input type="radio" value="4" name="q12" id="q124" onclick="func12()"/>
+  			<label for="q124">D.严重异常：特别古怪的和不可理解的非语言的交往</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十三、活动水平</p>
+  			<input type="radio"   value="1" name="q13" id="q131" onclick="func13()"/>
+  			<label for="q131">A.与年龄相当：指出活动水平，不多动亦不少动</label>
+  			<br/>
+  			<input type="radio" value="2" name="q13" id="q132" onclick="func13()"/>
+  			<label for="q132">B.轻度异常：轻度不安静，或有轻度活动缓慢，但一般可控制</label>
+  			<br/>
+  			<input type="radio" value="3" name="q13" id="q133" onclick="func13()"/>
+  			<label for="q133">C.中度异常：活动相当多，并且控制其活动量有困难，或者相当不活动或运动缓慢，检查者很频繁地控制或以极大努力才能得到反应</label>
+  			<br/>
+  			<input type="radio" value="4" name="q13" id="q134" onclick="func13()"/>
+  			<label for="q134">D.严重异常：极不正常的活动水平要么是不停，要么是冷淡的，对任何事件很难有反应，差不多不断地需要大人控制</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十四、智力功能</p>
+  			<input type="radio"   value="1" name="q14" id="q141" onclick="func14()"/>
+  			<label for="q141">A.与年龄相当：正常智力功能，无迟钝的证据</label>
+  			<br/>
+  			<input type="radio" value="2" name="q14" id="q142" onclick="func14()"/>
+  			<label for="q142">B.轻度异常：轻度智力低下，技能低下表现在各个领域</label>
+  			<br/>
+  			<input type="radio" value="3" name="q14" id="q143" onclick="func14()"/>
+  			<label for="q143">C.中度异常：中度智力低下，某些技能明显迟钝，其他的接近年龄水平</label>
+  			<br/>
+  			<input type="radio" value="4" name="q14" id="q144" onclick="func14()"/>
+  			<label for="q144">D.严重异常：智力功能严重障碍，某些技能表现迟钝，另外一些在年龄水平以上或不寻常</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十五、总的印象</p>
+  			<input type="radio"   value="1" name="q15" id="q151" onclick="func15()"/>
+  			<label for="q151">A.与年龄相当：不是孤独症</label>
+  			<br/>
+  			<input type="radio" value="2" name="q15" id="q152" onclick="func15()"/>
+  			<label for="q152">B.轻度异常：轻微的或轻度孤独症</label>
+  			<br/>
+  			<input type="radio" value="3" name="q15" id="q153" onclick="func15()"/>
+  			<label for="q153">C.中度异常：孤独症的中度征象</label>
+  			<br/>
+  			<input type="radio" value="4" name="q15" id="q154" onclick="func15()"/>
+  			<label for="q154">D.严重异常：非常多的孤独症征象</label>
+  			<br/><br/><br/>
+  			</fieldset>
+ 			 <input id="btn2" type="submit" value="发射" />
+<!--
+			 <button onclick="displaybtn()" id="btn2">fashe</button>
+-->		</form>
+
+	
+	</div>
+	
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>问卷</title>
+    <script type="text/javascript">
+    	
+   		document.addEventListener('plusready', function(){
+   			//console.log("所有plus api都应该在此事件发生后调用，否则会出现plus is undefined。"
+   			
+   		});
+   		
+    </script>
+</head>
+<body>
+	
+	
+	<div>
+		<form action="post.php" method="post">
+			<p>姓名</p>
+			<input type="text" name="fname" /><br />
+			<p>年龄</p>
+			<input type="number" name="age" /><br />
+			<p>性别</p>
+			<select name="gender">
+				<option value="male">男</option>
+				<option value="female">女</option>
+			</select>
+		<fieldset>
+  			<p>一、人际关系</p>
+  			<input type="radio" checked value="1" name="q01" id="q011" />
+  			<label for="q011">A.与年龄相当：与年龄相符的害羞、自卫及表示不同意或家人诉说的或观察到的一些轻微的害羞、烦躁、困扰，但与同龄孩子相比程度并不严重。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q01" id="q012" />
+  			<label for="q012">B.轻度异常：缺乏一些眼光接触，不愿意、回避、过分害羞，对检查者反应有轻度缺陷，有时过度依赖父母。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q01" id="q013" />
+  			<label for="q013">C.中度异常：有时儿童表现出孤独冷漠，引起儿童注意要花费较长时间和较大的努力，极少主动接触他人，常回避人，要使劲打扰他才能得到反应</label>
+  			<br/>
+  			<input type="radio" value="4" name="q01" id="q014" />
+  			<label for="q014">D.严重异常：强烈地回避，总是显得孤独冷漠，毫不理会成人所作所为，儿童对检查者很少反应，只有检查者强烈地干扰，才能产生反应</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>二、模仿（词和动作）</p>
+  			<input type="radio" checked value="1" name="q02" id="q021" />
+  			<label for="q021">A.与年龄相当：与年龄相符的模仿</label>
+  			<br/>
+  			<input type="radio" value="2" name="q02" id="q022" />
+  			<label for="q022">B.轻度异常：大多数时间内能模仿简单的行为，偶尔在督促下或延迟一会能模仿</label>
+  			<br/>
+  			<input type="radio" value="3" name="q02" id="q023" />
+  			<label for="q023">C.中度异常：部分时间能模仿，但常在检查者极大的要求下才模仿</label>
+  			<br/>
+  			<input type="radio" value="4" name="q02" id="q024" />
+  			<label for="q024">D.严重异常：很少用语言或运动模仿别人</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>三、情感反应</p>
+  			<input type="radio" checked value="1" name="q03" id="q031" />
+  			<label for="q031">A.与年龄相当：与年龄、情境相适应的情感反应（愉快、不愉快）和兴趣，通过面部表情姿势的变化来表达</label>
+  			<br/>
+  			<input type="radio" value="2" name="q03" id="q032" />
+  			<label for="q032">B.轻度异常：偶尔表现出某种不恰当的情绪类型和程度，有时反应与客观环境或事物毫无联系</label>
+  			<br/>
+  			<input type="radio" value="3" name="q03" id="q033" />
+  			<label for="q033">C.中度异常：不适当的情感的示意，反应相当受限或过分，或往往与刺激无关</label>
+  			<br/>
+  			<input type="radio" value="4" name="q03" id="q034" />
+  			<label for="q034">D.严重异常：对环境极少有情绪反应，或反应极不恰当。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>四、躯体运用能力</p>
+  			<input type="radio" checked value="1" name="q04" id="q041" />
+  			<label for="q041">A.与年龄相当：与年龄相适应的利用和意识</label>
+  			<br/>
+  			<input type="radio" value="2" name="q04" id="q042" />
+  			<label for="q042">B.轻度异常：可见一些轻微异常，诸如笨拙、重复动作、协调性差等情况</label>
+  			<br/>
+  			<input type="radio" value="3" name="q04" id="q043" />
+  			<label for="q043">C.中度异常：有中度特殊的手指或身体姿势功能失调的征象，摇动旋转，手指摆动，脚尖行走</label>
+  			<br/>
+  			<input type="radio" value="4" name="q04" id="q044" />
+  			<label for="q044">D.严重异常：出现于上述的一些异常运动，但强度更高、频率更多，即使受到别人制止，或儿童在从事另外的活动时均持续出现</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>五、与非生命物体的关系</p>
+  			<input type="radio" checked value="1" name="q05" id="q051" />
+  			<label for="q051">A.与年龄相当：适合年龄的兴趣运用和探索</label>
+  			<br/>
+  			<input type="radio" value="2" name="q05" id="q052" />
+  			<label for="q052">B.轻度异常：轻度的对东西缺乏兴趣或不适当地使用物体，象婴儿一样咬东西，猛敲东西，或者迷恋于物体发出的吱吱叫声或不停地开灯、关灯</label>
+  			<br/>
+  			<input type="radio" value="3" name="q05" id="q053" />
+  			<label for="q053">C.中度异常：对多数物体缺乏兴趣或表现有些特别，如重复转动某件物体，反复用手指尖捏起东西，旋转轮子或对某部分着迷，这些行为可部分地或暂时地纠正。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q05" id="q054" />
+  			<label for="q054">D.严重异常：严重的对物体的不适当的兴趣、使用和探究，如上边发生的情况频繁的发生，很难转移其注意力。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>六、对环境变化的适应</p>
+  			<input type="radio" checked value="1" name="q06" id="q061" />
+  			<label for="q061">A.与年龄相当：对环境改变产生与年龄相适应的反应。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q06" id="q062" />
+  			<label for="q062">B.轻度异常：对环境改变产生某些改变，倾向维持某一物体活动或坚持相同的反应形式，但很快能改变过来。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q06" id="q063" />
+  			<label for="q063">C.中度异常：儿童拒绝改变日常程序，对环境改变出现烦躁、沮丧的征象，当干扰他时很难被吸引过来。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q06" id="q064" />
+  			<label for="q064">D.严重异常：对改变产生严重的反应，假如坚持把环境的变化强加给他，该儿童可能生气或极不合作，以暴怒作为反应。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>七、视觉反应</p>
+  			<input type="radio" checked value="1" name="q07" id="q071" />
+  			<label for="q071">A.与年龄相当：适合年龄的视觉反应，可与其他感觉系统反应整合</label>
+  			<br/>
+  			<input type="radio" value="2" name="q07" id="q072" />
+  			<label for="q072">B.轻度异常：有时必须提醒儿童去注意物体，有时全神贯注于“镜像”，有时回避眼光接触，有时凝视空间，有时着迷于灯光</label>
+  			<br/>
+  			<input type="radio" value="3" name="q07" id="q073" />
+  			<label for="q073">C.中度异常：经常要提醒正在干什么，喜欢观看光亮的物体即使强迫他也只有很少的眼光接触，盯着看人或凝视空间</label>
+  			<br/>
+  			<input type="radio" value="4" name="q07" id="q074" />
+  			<label for="q074">D.严重异常：对物体和人存在广泛严重的视觉回避，也可能表现出上面描述的特异性视觉模式，着迷于使用“余光”。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>八、听觉反应</p>
+  			<input type="radio" checked value="1" name="q08" id="q081" />
+  			<label for="q081">A.与年龄相当：适合年龄的听觉反应</label>
+  			<br/>
+  			<input type="radio" value="2" name="q08" id="q082" />
+  			<label for="q082">B.轻度异常：对听觉刺激或某些特殊声音缺乏一些反应，反应可能延迟，有时必须重复声音刺激，有时对大的声音敏感或对此声音分心，有时会被无关的声音搞得心烦意乱。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q08" id="q083" />
+  			<label for="q083">C.中度异常：对声音的反应常出现变化，往往必须重复数次刺激才产生反应，或对某些声音敏感（如很容易受惊、捂上耳朵等）</label>
+  			<br/>
+  			<input type="radio" value="4" name="q08" id="q084" />
+  			<label for="q084">D.严重异常：对声音全面回避，对声音类型不加注意或极度敏感</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>九、近处感觉反应</p>
+  			<input type="radio" checked value="1" name="q09" id="q091" />
+  			<label for="q091">A.与年龄相当：对疼痛产生适当强度的反应，正常触觉和嗅觉。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q09" id="q092" />
+  			<label for="q092">B.轻度异常：儿童可能不停地将一些东西塞入口重，也许一次又一次地闻、尝不能吃的东西，对捏或其他轻微痛刺激出现忽视或过度反应。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q09" id="q093" />
+  			<label for="q093">C.中度异常：儿童可能比较迷恋触、闻、舔物品或人。对痛觉也表现出一定程度的异常反应，过度敏感或迟钝。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q09" id="q094" />
+  			<label for="q094">D.严重异常：儿童迷恋嗅、舔物品，而很少用正常的方式去感觉、探索物品，对痛觉可能过分敏感或迟钝。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十、焦虑反应</p>
+  			<input type="radio" checked value="1" name="q10" id="q101" />
+  			<label for="q101">A.与年龄相当：对情境产生与年龄相适应的反应，并且反应无延长。</label>
+  			<br/>
+  			<input type="radio" value="2" name="q10" id="q102" />
+  			<label for="q102">B.轻度异常：轻度焦虑反应。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q10" id="q103" />
+  			<label for="q103">C.中度异常：中度焦虑反应。</label>
+  			<br/>
+  			<input type="radio" value="4" name="q10" id="q104" />
+  			<label for="q104">D.严重异常：严重的焦虑反应，儿童在会见的一段时间内可能不能坐下，或很害怕，或退缩，且安抚他们是极端困难的，有时又会不辨危险</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十一、语言交流</p>
+  			<input type="radio" checked value="1" name="q11" id="q111" />
+  			<label for="q111">A.与年龄相当：适合年龄的语言</label>
+  			<br/>
+  			<input type="radio" value="2" name="q11" id="q112" />
+  			<label for="q112">B.轻度异常：语言迟钝，多数语言有意义，但有一点模仿语言或代词错用。</label>
+  			<br/>
+  			<input type="radio" value="3" name="q11" id="q113" />
+  			<label for="q113">C.中度异常：缺乏语言，或有意义的语言与不适当的语言相混淆（模仿言语或莫名其妙的话）</label>
+  			<br/>
+  			<input type="radio" value="4" name="q11" id="q114" />
+  			<label for="q114">D.严重异常：不能应用有意义的语言，而且儿童可能出现幼稚性尖叫或怪异的、动物样声音、或者是类似言语的噪音。</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十二、非语言交流</p>
+  			<input type="radio" checked value="1" name="q12" id="q121" />
+  			<label for="q121">A.与年龄相当：与年龄相符的非语言交流</label>
+  			<br/>
+  			<input type="radio" value="2" name="q12" id="q122" />
+  			<label for="q122">B.轻度异常：非语言交流迟钝，交往仅为简单的或含糊的反应，如指出或去取他想要的东西</label>
+  			<br/>
+  			<input type="radio" value="3" name="q12" id="q123" />
+  			<label for="q123">C.中度异常：缺乏非语言交往，不会利用非语言交往，或不会对非语言交往作出反应，也许拉着成人的手走向自己所想要的东西，但不能用姿势来表明自己的愿望，或不能用手指向要的东西</label>
+  			<br/>
+  			<input type="radio" value="4" name="q12" id="q124" />
+  			<label for="q124">D.严重异常：特别古怪的和不可理解的非语言的交往</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十三、活动水平</p>
+  			<input type="radio" checked value="1" name="q13" id="q131" />
+  			<label for="q131">A.与年龄相当：指出活动水平，不多动亦不少动</label>
+  			<br/>
+  			<input type="radio" value="2" name="q13" id="q132" />
+  			<label for="q132">B.轻度异常：轻度不安静，或有轻度活动缓慢，但一般可控制</label>
+  			<br/>
+  			<input type="radio" value="3" name="q13" id="q133" />
+  			<label for="q133">C.中度异常：活动相当多，并且控制其活动量有困难，或者相当不活动或运动缓慢，检查者很频繁地控制或以极大努力才能得到反应</label>
+  			<br/>
+  			<input type="radio" value="4" name="q13" id="q134" />
+  			<label for="q134">D.严重异常：极不正常的活动水平要么是不停，要么是冷淡的，对任何事件很难有反应，差不多不断地需要大人控制</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十四、智力功能</p>
+  			<input type="radio" checked value="1" name="q14" id="q141" />
+  			<label for="q141">A.与年龄相当：正常智力功能，无迟钝的证据</label>
+  			<br/>
+  			<input type="radio" value="2" name="q14" id="q142" />
+  			<label for="q142">B.轻度异常：轻度智力低下，技能低下表现在各个领域</label>
+  			<br/>
+  			<input type="radio" value="3" name="q14" id="q143" />
+  			<label for="q143">C.中度异常：中度智力低下，某些技能明显迟钝，其他的接近年龄水平</label>
+  			<br/>
+  			<input type="radio" value="4" name="q14" id="q144" />
+  			<label for="q144">D.严重异常：智力功能严重障碍，某些技能表现迟钝，另外一些在年龄水平以上或不寻常</label>
+  			<br/><br/><br/>
+		
+		
+  			<p>十五、总的印象</p>
+  			<input type="radio" checked value="1" name="q15" id="q151" />
+  			<label for="q151">A.与年龄相当：不是孤独症</label>
+  			<br/>
+  			<input type="radio" value="2" name="q15" id="q152" />
+  			<label for="q152">B.轻度异常：轻微的或轻度孤独症</label>
+  			<br/>
+  			<input type="radio" value="3" name="q15" id="q153" />
+  			<label for="q153">C.中度异常：孤独症的中度征象</label>
+  			<br/>
+  			<input type="radio" value="4" name="q15" id="q154" />
+  			<label for="q154">D.严重异常：非常多的孤独症征象</label>
+  			<br/><br/><br/>
+  			</fieldset>
+  			<input type="submit" value="发射" />
+		</form>
+
+	
+	</div>
+
+
+
+
+
+</body>
+</html>
